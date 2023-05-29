@@ -53,7 +53,7 @@ Resposta (201 CREATED):
 ### 2. Login
 **Endpoint**: `POST /users/login`
 
-Body (JSON):
+**Body** (JSON):
 
 ```json
 {
@@ -73,7 +73,7 @@ Resposta (200 OK):
 ### 3. Get posts
 **Endpoint**: GET /posts
 
-Headers:
+**Headers**:
 
 ```json
 {
@@ -104,7 +104,7 @@ Resposta (200 OK):
 ### 4. Create post
 **Endpoint**: `POST /posts`
 
-Headers:
+**Headers**:
 
 ```json
 {
@@ -112,7 +112,7 @@ Headers:
 }
 ```
 
-Body (JSON):
+**Body** (JSON):
 
 ```json
 {
@@ -131,7 +131,7 @@ Headers:
   "authorization": "token jwt"
 }
 ```
-Body (JSON):
+**Body** (JSON):
 
 ```json
 {
@@ -143,7 +143,7 @@ Resposta (200 OK)
 ### 6. Delete post
 **Endpoint**: `DELETE /posts/:id`
 
-Headers:
+**Headers**:
 
 ```json
 {
@@ -155,21 +155,21 @@ Resposta (200 OK)
 ### 7. Like/Dislike post
 **Endpoint**: `PUT /posts/:id/like`
 
-Headers:
+**Headers**:
 
 ```json
 {
   "authorization": "token jwt"
 }
 ```
-Body (JSON) para like:
+**Body** (JSON) para like:
 
 ```json
 {
   "like": true
 }
 ```
-Body (JSON) para dislike:
+**Body** (JSON) para dislike:
 
 ```json
 {
