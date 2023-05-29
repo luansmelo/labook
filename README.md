@@ -50,8 +50,8 @@ Resposta (201 CREATED):
 }
 ``` 
 
-2. Login
-Endpoint: POST /users/login
+### 2. Login
+**Endpoint**: POST /users/login
 
 Body (JSON):
 
@@ -70,8 +70,8 @@ Resposta (200 OK):
 }
 ```
 
-3. Get posts
-Endpoint: GET /posts
+### 3. Get posts
+**Endpoint**: GET /posts
 
 Headers:
 
@@ -101,8 +101,8 @@ Resposta (200 OK):
 ]
 ```
 
-4. Create post
-Endpoint: POST /posts
+### 4. Create post
+**Endpoint**: POST /posts
 
 Headers:
 
@@ -121,8 +121,8 @@ Body (JSON):
 ```
 Resposta (201 CREATED)
 
-5. Edit post
-Endpoint: PUT /posts/:id
+### 5. Edit post
+**Endpoint**: PUT /posts/:id
 
 Headers:
 
@@ -140,8 +140,8 @@ Body (JSON):
 ```
 Resposta (200 OK)
 
-6. Delete post
-Endpoint: DELETE /posts/:id
+### 6. Delete post
+**Endpoint**: DELETE /posts/:id
 
 Headers:
 
@@ -152,8 +152,8 @@ Headers:
 ```
 Resposta (200 OK)
 
-7. Like/Dislike post
-Endpoint: PUT /posts/:id/like
+### 7. Like/Dislike post
+**Endpoint**: PUT /posts/:id/like
 
 Headers:
 
