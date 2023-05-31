@@ -12,6 +12,40 @@ O Labook é uma rede social projetada para facilitar a interação e a conexão 
 - **Knex**: Construtor de consultas SQL para manipulação de dados.
 - **POO (Programação Orientada a Objetos)**: Utilizada para estruturar o código de maneira mais robusta e reutilizável.
 
+
+Banco de Dados
+O banco de dados consiste em três tabelas:
+
+users
+Mantém informações dos usuários.
+
+Campo	Tipo	Descrição
+id	UUID	Identificador único do usuário
+name	string	Nome do usuário
+email	string	Email do usuário
+password	string	Senha do usuário (criptografada)
+role	string	Função do usuário
+created_at	timestamp	Data de criação do usuário
+posts
+Armazena os posts criados pelos usuários.
+
+Campo	Tipo	Descrição
+id	UUID	Identificador único do post
+creator_id	UUID	Identificador do usuário que criou o post
+content	string	Conteúdo do post
+likes	integer	Quantidade de curtidas no post
+deslikes	integer	Quantidade de descurtidas no post
+created_at	timestamp	Data de criação do post
+updated_at	timestamp	Data de atualização do post
+likes_deslikes
+Rastreia as curtidas e descurtidas dos posts por usuários.
+
+Campo	Tipo	Descrição
+user_id	UUID	Identificador do usuário
+post_id	UUID	Identificador do post
+like	boolean	Curtida (true = curtiu, false = descurtiu)
+
+
 ## Funcionalidades e Requisitos
 
 - **Autenticação**: O aplicativo permite que os usuários se registrem e façam login usando email e senha. A senha do usuário é protegida com hash usando Bcrypt.
