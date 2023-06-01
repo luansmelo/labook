@@ -22,7 +22,7 @@ Mantém informações dos usuários.
 
 | Campo       | Tipo         | Descrição                           |
 |-------------|--------------|-------------------------------------|
-| id          | UUID         | Identificador único do usuário      |
+| id          | string         | Identificador único do usuário      |
 | name        | string       | Nome do usuário                     |
 | email       | string       | Email do usuário                    |
 | password    | string       | Senha do usuário (criptografada)    |
@@ -35,8 +35,8 @@ Armazena os posts criados pelos usuários.
 
 | Campo       | Tipo         | Descrição                                       |
 |-------------|--------------|-------------------------------------------------|
-| id          | UUID         | Identificador único do post                     |
-| creator_id  | UUID         | Identificador do usuário que criou o post       |
+| id          | string       | Identificador único do post                     |
+| creator_id  | string       | Identificador do usuário que criou o post       |
 | content     | string       | Conteúdo do post                                |
 | likes       | integer      | Quantidade de curtidas no post                  |
 | deslikes    | integer      | Quantidade de descurtidas no post               |
@@ -49,8 +49,8 @@ Rastreia as curtidas e descurtidas dos posts por usuários.
 
 | Campo       | Tipo         | Descrição                           |
 |-------------|--------------|-------------------------------------|
-| user_id     | UUID         | Identificador do usuário            |
-| post_id     | UUID         | Identificador do post               |
+| user_id     | string       | Identificador do usuário            |
+| post_id     | string       | Identificador do post               |
 | like        | boolean      | Curtida (true = curtiu, false = descurtiu)  |
 
 ## Funcionalidades e Requisitos
