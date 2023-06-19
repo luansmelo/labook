@@ -67,6 +67,31 @@ O código base do aplicativo é estruturado em uma arquitetura em camadas, usand
 
 O Labook possui diversos endpoints para acesso às suas funcionalidades. Todos os endpoints protegidos requerem um token JWT para serem acessados. Este token é fornecido na resposta dos endpoints de signup e login.
 
+## Rotas
+
+Certifique-se de que as rotas seguem o padrão apropriado:
+
+**Cadastro de Usuário**:
+`POST /users/signup`
+
+**Login de Usuário**:
+`POST /users/login`
+
+**Obter Posts**:
+`GET /posts`
+
+**Criar Post**:
+`POST /posts`
+
+**Editar Post**:
+`PUT /posts/:id`
+
+**Deletar Post**:
+DELETE /posts/:id
+
+**Curtir/Descurtir Post**:
+PUT /posts/:id/like
+
 ## Exemplos de Requisição
 
 ### 1. Signup
@@ -218,3 +243,4 @@ Resposta (200 OK)
 }
 ```
 Resposta (200 OK)
+
