@@ -69,37 +69,38 @@ O Labook possui diversos endpoints para acesso às suas funcionalidades. Todos o
 
 ## Rotas
 
-Certifique-se de que as rotas seguem o padrão apropriado:
+#### Certifique-se de que as rotas seguem o padrão apropriado:
 
-## Cadastro de Usuário:
 ```json
- POST /users/signup
+Cadastro de Usuário:
+  POST /users/signup
 
  Login de Usuário:
   POST /users/login
 ```
 
-## Obter Posts:
-  **GET** `/posts`
+```json
+Obter Posts:
+  GET /posts
 
-## Criar Post:
-  **POST** `/posts`
+Criar Post:
+  POST /posts
 
-## Editar Post:
-  **PUT** `/posts/:id`
+Editar Post:
+  PUT /posts/:id
 
-## Deletar Post**:
-  **DELETE** /posts/:id`
+Deletar Post:
+  DELETE /posts/:id
 
-## Curtir/Descurtir Post:
-  **PUT** `/posts/:id/like`
+Curtir/Descurtir Post:
+  PUT /posts/:id/like
+```
 
 ## Exemplos de Requisição
 
 ### 1. Signup
 
 **Endpoint**: `POST /users/signup`
-```
 
 **Body** (JSON):
 
