@@ -70,7 +70,7 @@ O Labook possui diversos endpoints para acesso às suas funcionalidades. Todos o
 ## Rotas
 
 Certifique-se de que as rotas seguem o padrão apropriado:
-
+```json
 ## Cadastro de Usuário:
   **POST** `/users/signup`
 
@@ -97,6 +97,7 @@ Certifique-se de que as rotas seguem o padrão apropriado:
 ### 1. Signup
 
 **Endpoint**: `POST /users/signup`
+```
 
 **Body** (JSON):
 
